@@ -138,10 +138,18 @@ async fn main() -> Result<(), Error> {
     let mut opt: Opt = Opt::from_arg_matches(&matches)?;
     opt.process()?;
     env_logger::builder().filter_level(opt.log_level()).parse_default_env().init();
-    info!("=================================================================================");
-    info!("                 nexellia-miner GPU {}", env!("CARGO_PKG_VERSION"));
-    info!(" Mining for: {}", opt.mining_address);
-    info!("=================================================================================");
+    info!(":::::::::   ::::::::  ::::    ::::");
+    info!(":+:    :+: :+:    :+: +:+:+: :+:+:+");
+   	info!("+:+    +:+ +:+        +:+ +:+:+ +:+");
+    info!("+#++:++#+  +#++:++#++ +#+  +:+  +#+");
+    info!("+#+    +#+        +#+ +#+       +#+");
+    info!("#+#    #+# #+#    #+# #+#       #+#");
+    info!("#########   ########  ###       ###");
+    info!("┌┐ ┬ ┬  ╔═╗╔═╗ ╦   ╦");
+    info!("├┴┐└┬┘  ╠═╝║╣  ║   ║");
+    info!("└─┘ ┴   ╩o ╚═╝o╩═╝o╩");
+	info!(" Test Bencmark GPU {}", env!("CARGO_PKG_VERSION"));
+	info!(" setting for: {}", opt.mining_address);
     info!("Found plugins: {:?}", plugins);
     info!("Plugins found {} workers", worker_count);
     if worker_count == 0 && opt.num_threads.unwrap_or(0) == 0 {
