@@ -140,7 +140,7 @@ async fn main() -> Result<(), Error> {
     env_logger::builder().filter_level(opt.log_level()).parse_default_env().init();
     info!(":::::::::   ::::::::  ::::    ::::");
     info!(":+:    :+: :+:    :+: +:+:+: :+:+:+");
-   	info!("+:+    +:+ +:+        +:+ +:+:+ +:+");
+    info!("+:+    +:+ +:+        +:+ +:+:+ +:+");
     info!("+#++:++#+  +#++:++#++ +#+  +:+  +#+");
     info!("+#+    +#+        +#+ +#+       +#+");
     info!("#+#    #+# #+#    #+# #+#       #+#");
@@ -148,8 +148,8 @@ async fn main() -> Result<(), Error> {
     info!("┌┐ ┬ ┬  ╔═╗╔═╗ ╦   ╦");
     info!("├┴┐└┬┘  ╠═╝║╣  ║   ║");
     info!("└─┘ ┴   ╩o ╚═╝o╩═╝o╩");
-	info!(" Test Bencmark GPU {}", env!("CARGO_PKG_VERSION"));
-	info!(" setting for: {}", opt.mining_address);
+    info!(" Test Bencmark GPU {}", env!("CARGO_PKG_VERSION"));
+    info!(" setting for: {}", opt.mining_address);
     info!("Found plugins: {:?}", plugins);
     info!("Plugins found {} workers", worker_count);
     if worker_count == 0 && opt.num_threads.unwrap_or(0) == 0 {
